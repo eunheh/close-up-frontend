@@ -1,0 +1,12 @@
+<h1 class="title">Close Ups</h1>
+
+<ul class="imgs">
+  <li ng-repeat="img in imgs">
+    <a href="#/img/{{ img._id }}">
+      <div class="card">
+        <h3>{{ img.title }}</h3>
+        <img ng-src="{{ img.url }}" />
+      </div>
+    </a>
+  </li>
+</ul>
