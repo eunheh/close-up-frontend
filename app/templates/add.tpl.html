@@ -1,0 +1,13 @@
+<h1 class="title">Add</h1>
+
+<form name="new-img" ng-submit="addImg(img)">
+  <p class="control">
+    <input name="name" type="text" placeholder="Name"
+           ng-model="img.title" />
+  </p>
+  <p class="control">
+    <input name="url" type="text" placeholder="http://closeup.img"
+           ng-model="img.url" />
+  </p>
+  <button class="button is-primary">Add</button>
+</form>
