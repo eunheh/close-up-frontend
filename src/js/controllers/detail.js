@@ -15,12 +15,8 @@ function DetailController ($scope, $http, $stateParams, $document) {
 
 $scope.addLike = (img) => {
         img.count++;
-        $http.put(SERVER + img.id, img);
-        $document.find('span').eq(1).addClass('count');
-        setTimeout(()=>{
-         
-        }, 1000);
-    };
+        $http.put(SERVER + '/post/',img + $stateParams.id,img) 
+    }
 
 
 
