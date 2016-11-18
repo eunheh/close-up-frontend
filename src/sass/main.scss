@@ -44,12 +44,26 @@ h1{
 	  border-radius: 117px;
 		box-shadow: black 9px 10px 35px;
 	}
+  img:hover{
+  background:antiquewhite;
+  border:solid 5px #7e1110;
+  box-shadow: black 20px 10px 50px
+  
+
+
+  }
+
+
 	img {
 		max-width: 144%;
 		position: absolute;
 		left: -42px;
 		top: -6px;
 		border-radius: 130px;
+     -webkit-transition: all .5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
+    transition: all.5s ease
 	}
 	.count{
 		font-size: large;
@@ -69,7 +83,7 @@ h1{
     border-radius: 15px;
     box-shadow: grey -2px 7px 47px;
 }
-  button{
+  .buttonis-primary{
     width: 429px;
     height: 40px;
     margin-top: 25px;
