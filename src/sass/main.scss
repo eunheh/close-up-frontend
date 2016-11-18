@@ -20,30 +20,30 @@ h1{
 }
 
 .cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	h3{
+		text-align: center;
+	}
 	.card {
-	 height: 200px;
-	    width: 264px;
-	    margin: 0px;
-	    float: left;
-	    overflow: auto;
-	    border-radius: 117px;
-
+		height: 200px;
+	  width: 265px;
+	  margin-top: 5px;
+		margin-bottom: 50px;
+		margin-right: 5px;
+		margin-left: 5px;
+	  overflow: auto;
+	  border-radius: 117px;
 	}
-
 	img {
-			max-width: 144%;
-			position: absolute;
-			bottom: 7px;
-			left: -42px;
-			top: -6px;
-			border-radius: 130px;
+		max-width: 144%;
+		position: absolute;
+		left: -42px;
+		top: -6px;
+		border-radius: 130px;
 	}
-	.imgs{
-		width: 100%;
-	    padding: 0px;
-	    height: 85px;
-	}
-
 	.count{
 		font-size: large;
 	}
