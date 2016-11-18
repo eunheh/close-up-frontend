@@ -11,14 +11,15 @@ body{
 
 img {max-width:100%;}
 
-.card {
-   height: 250px;
-   width: 250px;
-   margin: 150px 15px 15px 20px;
-   float: left;
-   overflow: auto;
-    border: 1px solid black;
-    }
+.cardContainer{
+	display: flex;
+	flex-direction: row;
+	.card {
+		margin: 150px 15px 15px 20px;
+		width: 200px;
+		height: 200px;
+	}
+}
 
 .imgs{
 	width: 100%;
