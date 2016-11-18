@@ -71,18 +71,18 @@ h1{
 		left: -42px;
 		top: -6px;
 		border-radius: 130px;
-<<<<<<< HEAD
+
    }
-=======
-	}
->>>>>>> ff95f2fced66847f4d8d0be36443b7d3d2e7a8f7
+
 	.count{
 		font-size: large;
 	}
+}
 
 
 .container{
-  height:700px;
+  height:900px;
+}
 
 	.formPosition{
 	    position: absolute;
@@ -94,8 +94,14 @@ h1{
 	    height: 50px;
 	    border-radius: 15px;
 	    box-shadow: grey -2px 7px 47px;
+      border-color: #4c2715;
 	}
-	.buttonis-primary{
+	
+.buttonis-primary:hover{
+  background:hotpink;
+}
+
+  .buttonis-primary{
 	    width: 429px;
 	    height: 40px;
 	    margin-top: 25px;
@@ -103,6 +109,7 @@ h1{
 	    border-radius: 30px;
 	    border-color: sienna;
 	}
+
 
 	.Addpage{
 			font-family: 'Cutive Mono', monospace;
@@ -114,41 +121,19 @@ h1{
 	    border-color: black;
 	    box-shadow: black 9px 10px 35px;
 	}
+.border:hover{
+  box-shadow: black 20px 10px 50px;
+background: 5px aliceblue;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> ff95f2fced66847f4d8d0be36443b7d3d2e7a8f7
-.formPosition{
-    position: absolute;
-    right: 365px;
-    top: 170px;
+
+.border{
+    height: 578px;
+    border-radius: 37px;
+    width: 771px;
+    margin-left: 233px;
+    border-style: double;
+    box-shadow: #4c2715 9px 10px 89px;
+    background: floralwhite;
 }
-.input1{
-      width: 431px;
-    height: 50px;
-    border-radius: 15px;
-    box-shadow: grey -2px 7px 47px;
-}
-  .buttonis-primary{
-    width: 429px;
-    height: 40px;
-    margin-top: 25px;
-    background: lightpink;
-    border-radius: 30px;
-    border-color: sienna;
-  }
-.Addpage{
-      height: 320px;
-    margin-top: 30px;
-    border-radius: 179px;
-    border: solid 2px;
-    border-color: black;
-    box-shadow: black 9px 10px 35px;
-}
-<<<<<<< HEAD
-=======
->>>>>>> 7511f4597d174dc4f4863abc1f5e007e5fe6966e
-=======
->>>>>>> ff95f2fced66847f4d8d0be36443b7d3d2e7a8f7
+
