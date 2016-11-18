@@ -1,7 +1,7 @@
 import { SERVER } from "../server";
 
 function DetailController ($scope, $http, $stateParams, $document) {
- 
+
  $scope.img = {};
 
  function init () {
@@ -11,20 +11,11 @@ function DetailController ($scope, $http, $stateParams, $document) {
    });
  };
 
- 
-
 $scope.addLike = (img) => {
-        img.count++;
-        $http.put(SERVER + img.id, img);
-        $document.find('span').eq(1).addClass('count');
-        setTimeout(()=>{
-         
-        }, 1000);
-    };
-
-
-
-
+    img.count++
+    $http.put(SERVER + '/post/' + $stateParams.id, img)
+    // $document.find('span').eq().addClass('count');
+  };
 
  init();
 }
