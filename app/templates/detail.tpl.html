@@ -1,9 +1,15 @@
 
 <div class="detailCard">
-<h1 class="detailTitle">{{ img.title }}</h1>
 
-<button class='imgs' ng-dblclick="addLike(img)"><img ng-src="{{ img.url }}" />
-        </button>
-       <!--   <span><img src="./images/heart.png"></span>   -->
-    <span class="count">{{ img.count }}</span>
+  <div class="detailTitle">{{ img.title }}</div>
+
+  <div class="detailImg">
+    <button class='imgs' ng-dblclick="addLike(img)">
+      <img ng-src="{{ img.url }}" />
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="count">Love it {{ img.count }}x{{ times }}! </div>
+
 </div>
