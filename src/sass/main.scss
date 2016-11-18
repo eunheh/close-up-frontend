@@ -1,6 +1,48 @@
 @import "bulma";
+*{
+	    box-sizing: border-box;
+}
+body{
+	  color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.428571428571429;
+}
+
+img {max-width:100%;}
+
+ 
+
 
 .container {
-    width: 800px;
+       width: 1150px;
     margin: 25px auto;
+    border: solid;
+    height: 600px;
+    margin: 1px auto;
+}
+ 
+ 
+
+  
+.card {
+   height: 250px;
+   width: 250px;
+   margin: 150px 15px 15px 20px;
+   float: left;
+   overflow: auto;
+    border: 1px solid black;
+    }
+
+.heart{
+	width:50px;
+}
+.imgs{
+	width: 100%;
+    padding: 0px;
+    height: 85px;
+
+}
+.count{
+	font-size: large;
 }

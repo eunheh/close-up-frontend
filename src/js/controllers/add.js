@@ -1,4 +1,4 @@
-import { SERVER } from "./server";
+import { SERVER } from "../server";
 
 function AddController ($scope, $http, $state) {
 
