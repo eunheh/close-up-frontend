@@ -1,51 +1,50 @@
 @import "bulma";
 *{
-	    box-sizing: border-box;
-}
-body{
-	width: 1400px;
-    margin: auto;
-    height: 1000px;
+	  box-sizing: border-box;
 }
 
-img {max-width:100%;
-    border: solid;
-    border-radius: 130px;
-}
-
-img {
-        max-width: 144%;
-    position: absolute;
-    bottom: 7px;
-    left: -42px;
-    top: -6px;
-}
-
-.card {
- height: 200px;
-    width: 264px;
-    margin: 0px;
-    float: left;
-    overflow: auto;
-    /* border: 1px solid black; */
-    border-radius: 117px;
-    }
-
-.imgs{
-	width: 100%;
-    padding: 0px;
-    height: 85px;
-}
-
-.count{
-	font-size: large;
-}
 nav{
-	text-align: -webkit-right;
-    font-size: 22px;
-    margin-top: 8px;
-    border: solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 8px;
+}
+
+h1{
+	height: 110px;
+	text-align: center;
+}
+
+.addBar {
+	height: 75px;
+	text-align: center;
+}
+
+.cardContainer {
+	.card {
+	 height: 200px;
+	    width: 264px;
+	    margin: 0px;
+	    float: left;
+	    overflow: auto;
+	    border-radius: 117px;
+
+	}
+
+	img {
+			max-width: 144%;
+			position: absolute;
+			bottom: 7px;
+			left: -42px;
+			top: -6px;
+			border-radius: 130px;
+	}
+	.imgs{
+		width: 100%;
+	    padding: 0px;
+	    height: 85px;
+	}
+
+	.count{
+		font-size: large;
+	}
 }

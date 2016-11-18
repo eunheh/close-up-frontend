@@ -1,36 +1,21 @@
+
 <h1 class="title">Close Ups</h1>
-<<<<<<< HEAD
 
-<div class="add"><a href="#/add">Upload Close up</a></div>
+<div class="addBar">
+  <a href="#/add">Upload Close up</a>
+</div>
+
 <div class="cardContainer">
-  <ul class="imgs">
-    <li ng-repeat="img in imgs">
-      <a href="#/img/{{ img.id }}">
-        <div class="card">
-          <h3>{{ img.title }}</h3>
-          <img ng-src="{{ img.url }}" />
-        </div>
-      </a>
-    </li>
-  </ul>
-</div>
-=======
- 
- <div class='cardContainer'>
-<ul class="imgs">
+    <ul class="imgs">
       <li ng-repeat="img in imgs">
-      
-    <p>{{ img.title }}</p>
-
-    <a href="#/img/{{ img.id }}">
-
-      <div class="card">
-        <img ng-src="{{ img.url }}" />
- 
- 	</div>
-    </a>
-  </li>
-</ul>
+        <a href="#/img/{{ img.id }}">
+          <div class="card">
+            <h3>{{ img.title }}</h3>
+            <img ng-src="{{ img.url }}" />
+          </div>
+        </a>
+      </li>
+    </ul>
 </div>
 
->>>>>>> 2f77157dc78bcc0d0654eec53d92c1108dd912be
+</div>
