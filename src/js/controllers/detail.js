@@ -12,20 +12,12 @@ function DetailController ($scope, $http, $stateParams, $document) {
  };
 
 $scope.addLike = (img) => {
-<<<<<<< HEAD
-        img.count++;
-        $http.put(SERVER + '/post/',img + $stateParams.id,img) 
-    }
-
-
-
-
-=======
+ 
     img.count++
     $http.put(SERVER + '/post/' + $stateParams.id, img)
     // $document.find('span').eq().addClass('count');
   };
->>>>>>> bd2f5979e12066a02a01f5d438be691d9b680faa
+
 
  init();
 }

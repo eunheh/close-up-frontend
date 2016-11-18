@@ -1,12 +1,19 @@
 <h1 class="title">Close Ups</h1>
-
+ 
+ <div class='cardContainer'>
 <ul class="imgs">
-  <li ng-repeat="img in imgs">
+      <li ng-repeat="img in imgs">
+      
+    <p>{{ img.title }}</p>
+
     <a href="#/img/{{ img.id }}">
+
       <div class="card">
-        <h3>{{ img.title }}</h3>
         <img ng-src="{{ img.url }}" />
-      </div>
+ 
+ 	</div>
     </a>
   </li>
 </ul>
+</div>
+

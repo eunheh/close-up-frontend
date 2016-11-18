@@ -3,21 +3,31 @@
 	    box-sizing: border-box;
 }
 body{
-	  color: #4a4a4a;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.428571428571429;
+	width: 1400px;
+    margin: auto;
+    height: 1000px;
 }
 
-img {max-width:100%;}
+img {max-width:100%;
+    border: solid;
+    border-radius: 130px;
+}
+img {
+        max-width: 144%;
+    position: absolute;
+    bottom: 7px;
+    left: -42px;
+    top: -6px;
+}
 
 .card {
-   height: 250px;
-   width: 250px;
-   margin: 150px 15px 15px 20px;
-   float: left;
-   overflow: auto;
-    border: 1px solid black;
+ height: 200px;
+    width: 264px;
+    margin: 0px;
+    float: left;
+    overflow: auto;
+    /* border: 1px solid black; */
+    border-radius: 117px;
     }
 
 .imgs{
@@ -28,4 +38,13 @@ img {max-width:100%;}
 
 .count{
 	font-size: large;
+}
+nav{
+	text-align: -webkit-right;
+    font-size: 22px;
+    margin-top: 8px;
+    border: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
