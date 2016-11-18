@@ -48,83 +48,33 @@ h1{
 		font-size: large;
 	}
 }
-<<<<<<< HEAD
-nav{
-	text-align: -webkit-right;
-    font-size: 22px;
-    margin-top: 8px;
-    border: solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+.container{
+  height:700px;
 }
-
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.formPosition{
+    position: absolute;
+    right: 365px;
+    top: 170px;
 }
-
-ul.img-list li {
-  display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 150px;
+.input1{
+      width: 431px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: grey -2px 7px 47px;
 }
-
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
+  button{
+    width: 429px;
+    height: 40px;
+    margin-top: 25px;
+    background: lightpink;
+    border-radius: 30px;
+    border-color: sienna;
+  }
+.Addpage{
+      height: 320px;
+    margin-top: 30px;
+    border-radius: 179px;
+    border: solid 2px;
+    border-color: black;
+    box-shadow: black 9px 10px 35px;
 }
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-=======
->>>>>>> 1cb1a2bb27f57159b24de2c17a95633fc4c8b050
