@@ -77,8 +77,10 @@ h1{
 	}
 }
 
+
 .container{
-  height:700px;
+  height:900px;
+}
 
 	.formPosition{
 	    position: absolute;
@@ -90,8 +92,14 @@ h1{
 	    height: 50px;
 	    border-radius: 15px;
 	    box-shadow: grey -2px 7px 47px;
+      border-color: #4c2715;
 	}
-	.buttonis-primary{
+
+.buttonis-primary:hover{
+  background:hotpink;
+}
+
+  .buttonis-primary{
 	    width: 429px;
 	    height: 40px;
 	    margin-top: 25px;
@@ -102,6 +110,7 @@ h1{
 			color: black;
 	}
 
+
 	.Addpage{
 	    height: 320px;
 	    margin-top: 30px;
@@ -110,6 +119,9 @@ h1{
 	    border-color: black;
 	    box-shadow: black 9px 10px 35px;
 	}
+.border:hover{
+  box-shadow: black 20px 10px 50px;
+	background: 5px aliceblue;
 }
 
 .formPosition{
