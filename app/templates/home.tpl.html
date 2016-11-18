@@ -4,18 +4,18 @@
   <a href="#/add">Upload Close up</a>
 </div>
 
-<div class="cardContainer">
-    <ul class="imgs">
-      <li ng-repeat="img in imgs">
-        <a href="#/img/{{ img.id }}">
-          <div class="card">
-            <h3>{{ img.title }}</h3>
-            <img ng-src="{{ img.url }}" />
-          </div>
-        </a>
-      </li>
-    </ul>
-</div>
+<ul class="cardContainer">
+  <li ng-repeat="img in imgs">
+    <a href="#/img/{{ img.id }}">
+
+      <h3>{{ img.title }}</h3>
+
+      <div class="card">
+        <img ng-src="{{ img.url }}" />
+      </div>
+    </a>
+  </li>
+</ul>
 
 </div>
 
