@@ -116,7 +116,7 @@ h1{
 	    border-color: black;
 	    box-shadow: black 9px 10px 35px;
 	}
-	
+
 .border{
     height: 578px;
     border-radius: 37px;
@@ -164,13 +164,15 @@ h1{
 }
 
 .detailCard {
+	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
 	.detailTitle {
 		align-self: center;
-		margin: 15px;
+		margin-top: 15px;
+		margin-bottom: 10px;
 		font-size: 30px;
 	}
 	button {
@@ -181,7 +183,7 @@ h1{
 	}
 	.detailImg {
 		align-self: center;
-		width: 700px;
+		width: 600px;
 		position: relative;
 		z-index: 1;
 
@@ -204,7 +206,8 @@ h1{
 	}
 	.count{
 		font-size: 20px;
-		margin: 15px;
+		margin-top: 15px;
+		margin-bottom: 20px;
 		align-self: center;
 
 	}
