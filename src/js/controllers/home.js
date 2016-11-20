@@ -2,6 +2,12 @@ import { SERVER } from "../server";
 
 function HomeController ($scope, $http) {
   $scope.imgs = [];
+  	$scope.errors = {
+		name:"Name is Requried",
+		emial:"Email must contain an @",
+		Web:"Website cannot be left empty"
+
+	};
 
   function init () {
     $http.get(SERVER + '/post').then((resp) => {
@@ -11,6 +17,7 @@ function HomeController ($scope, $http) {
 
   init();
 
+ 
 };
 
 HomeController.$inject = ['$scope', '$http'];

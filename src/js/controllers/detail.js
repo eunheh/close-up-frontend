@@ -3,6 +3,12 @@ import { SERVER } from "../server";
 function DetailController ($scope, $http, $stateParams, $document) {
 
  $scope.img = {};
+ 	$scope.errors = {
+		name:"Name is Requried",
+		emial:"Email must contain an @",
+		Web:"Website cannot be left empty"
+
+	};
 
  function init () {
    let url = SERVER + '/post/' + $stateParams.id;
@@ -30,6 +36,7 @@ $scope.addLike = (img) => {
 
 
  init();
+  
 }
 
 DetailController.$inject = ['$scope', '$http', '$stateParams', '$document'];
