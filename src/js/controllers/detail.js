@@ -17,6 +17,7 @@ function DetailController ($scope, $http, $stateParams, $document) {
      $scope.img = resp.data;
      $scope.times = ($scope.img.count === null || $scope.img.count === 1) ? '' : '\'s';
      console.log($scope.img)
+     getComment();
    });
  };
 
@@ -35,17 +36,26 @@ $scope.addLike = (img) => {
     // $document.find('span').eq().addClass('count');
   };
 
-$scope.addComment = function (comment) {
-    let url = SERVER + '/image/' + $stateParams.id + '/comment';
-    $http.post(url, comment).then(function (resp) {
-      let comment = resp.data;
-      $scope.comments.push(comment);
-    });
-    $scope.comment = [];
-}
+  $scope.addComment = function (comments) {
+      let url = SERVER + '/image/' + $stateParams.id + '/comment';
+      $http.post(url, comments).then(function (resp) {
+        let comment = resp.data;
+        $scope.showComments.unshift(comment);
+      });
+      $scope.comments = [];
+  }
+
+  function getComment(){
+       let url = SERVER + '/image/' + $stateParams.id + '/comment';
+       $http.get(url, $scope.comment).then(function(response){
+         $scope.showComments = response.data;
+       })
+     }
+
  init();
 
 }
+
 
 DetailController.$inject = ['$scope', '$http', '$stateParams', '$document'];
 export {DetailController};

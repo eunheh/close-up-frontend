@@ -16,8 +16,8 @@
     <label class="label">Comments</label>
         <p class="control">
           <textarea class="textarea"
-                placeholder="Textarea"
-                ng-model="comment.comment">
+                placeholder="Add a comment!"
+                ng-model="comments.comment">
           </textarea>
         </p>
        <p class="control">
@@ -26,9 +26,9 @@
    </form>
 <div class="commentShow">
   <ul>
-    <li ng-repeat="comment in comments">
+    <li ng-repeat="showComment in showComments">
       <div class="box">
-        <p>{{comment}}</p>
+        <p>{{showComment.comment}}</p>
       </div>
     </li>
   </ul>
