@@ -14,4 +14,4 @@ Following is a link to the Close Ups Website:
 [Close Ups](http://tiy-gracelee-close-up-frontend.surge.sh)
 
 Following is a link to database on Heroku:
-[Close Ups](https://immense-anchorage-43177.herokuapp.com)
+[Close Ups on Heroku](https://immense-anchorage-43177.herokuapp.com)
