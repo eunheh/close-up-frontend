@@ -12,7 +12,7 @@
 
   <div class="count">Love it {{ img.count }}x{{ times }}! </div>
 
-  <form ng-submit="addComment(comment)" class="commentForm">
+  <form ng-submit="addComment(comments)" class="commentForm">
     <label class="label">Comments</label>
         <p class="control">
           <textarea class="textarea"
@@ -28,7 +28,7 @@
   <ul>
     <li ng-repeat="showComment in showComments">
       <div class="box">
-        <p>{{showComment.comment}}</p>
+        <p>{{showComment.comments}}</p>
       </div>
     </li>
   </ul>

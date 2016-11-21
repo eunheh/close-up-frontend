@@ -1,55 +1,17 @@
-# Installation
+#Hackathon
 
-#### Prerequisites
+##Close Ups
 
-Make sure you have an up to date installation of `npm`
-with `brew update` followed by either `brew install npm` or `brew upgrade npm`.
+The following objectives were met through the hackathon.
+ * Created a Back End model without a user/authorization using Adonis and deployed it onto Heroku.
+ * Created three Front End routes
+   1. Home Page - shows a list of all images
+   2. Detail Page - a detailed view of a specific image and any comments
+   3. Add Page - where a user can upload another image
+ * An heart button to was placed on the image in the detail page and are able to track how many loves happen on a specific image. This can happen by "double-clicking" on the image. The count can be seen on both the home view as an overlay on the image and on the detail view.
 
-Then use npm to install the following apps with `npm install -g $APP_NAME`
-* `gulp-cli`
-* `surge`
+Following is a link to the Close Ups Website:
+[Close Ups](http://tiy-gracelee-contact-form.surge.sh)
 
-Finally, I would strongly encourage you to install the `newapp` script from [here][newapp].
-
-[newapp]: https://gist.github.com/kingcons/a25733c233faf10847cbb4ff557e6843
-
-# Usage
-
-#### If you are using the `newapp` tool
-
-*NOTE:* If you do not use a lowercased project/folder name, the automatic deploy to surge with `npm run deploy` will fail as surge.sh always expects lowercased names.
-
-1. Run `$ newapp template <project name>`
-2. Change in to your new project
-3. Initialize Git `$ git init`
-4. Build
-
-#### If you are NOT using the `newapp` tool
-
-1. Clone down this repo
-2. Rename and change into the project folder
-3. Remove `git` from it `$ rm -rf .git`
-4. Initialize Git `$ git init`
-5. Install the dependencies `$ npm install`
-6. Build 
-
-
-# Features
-
-This template features a couple different tools. First it utalizes both NPM and Gulp for different tasks.
-
-## Gulp Tasks
-
-All tasks are listed below, but ideally you will just need to run `gulp start` and be done with it.
-
-- `gulp start`: This is the primary task that will fire up the server and allow you to start building
-- `gulp server`: This will start a Browsersync server with live-reload
-- `gulp sass`: This will compile your SASS
-- `gulp browserify`: This will transpile your JS from ES6 to ES5
-- `gulp watch`: This will start a watcher for files
-
-## NPM Scripts
-
-- `npm run test`: This will launch Mocha in your terminal and run any tests
-- `npm run deploy`: This will deploy your application to Surge.sh for you
-- `npm run lint`: This will run ESLint on your `/src/js` folder
+Following is a link to database on Heroku:
+[Close Ups](https://immense-anchorage-43177.herokuapp.com)
