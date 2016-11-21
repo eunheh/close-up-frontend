@@ -3,9 +3,8 @@ import { SERVER } from "../server";
 function HomeController ($scope, $http) {
   $scope.imgs = [];
   	$scope.errors = {
-		name:"Name is Requried",
-		emial:"Email must contain an @",
-		Web:"Website cannot be left empty"
+		name:"Title is Requried!",
+		Link:"Link cannot be left empty!"
 
 	};
 
@@ -17,8 +16,26 @@ function HomeController ($scope, $http) {
 
   init();
 
- 
+   $scope.validateName = function (name){
+  	// console.log(title)
+      if (name === ''){
+		$scope.errors.name = "Title cannot be left empty!"
+      }else{
+      	$scope.errors.name =''
+      }
+  };
+
+$scope.validateEmail = function (email){
+  	// console.log(title)
+      if (email === ''){
+		$scope.errors.email = "Link cannot be left empty!"
+      }else{
+      	$scope.errors.email =''
+      }
+  };
+
 };
+
 
 HomeController.$inject = ['$scope', '$http'];
 export { HomeController };
