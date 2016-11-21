@@ -10,6 +10,10 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/add.tpl.html',
       controller: 'AddController'
     })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'templates/about.tpl.html',
+    })
     .state('detail', {
       url: '/img/:id',
       templateUrl: 'templates/detail.tpl.html',

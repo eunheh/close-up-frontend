@@ -4,12 +4,12 @@ function DetailController ($scope, $http, $stateParams, $document) {
 
  $scope.img = {};
  $scope.comments = [];
- $scope.errors = {
-		name:"Name is Requried",
-		emial:"Email must contain an @",
-		Web:"Website cannot be left empty"
-
-	};
+ // $scope.errors = {
+ // 	name:"Name is Requried",
+ // 	emial:"Email must contain an @",
+ // 	Web:"Website cannot be left empty"
+ //
+ // };
 
  function init () {
    let url = SERVER + '/post/' + $stateParams.id;
@@ -36,19 +36,21 @@ $scope.addLike = (img) => {
     // $document.find('span').eq().addClass('count');
   };
 
-  $scope.addComment = function (comments) {
+  $scope.addComment = function (comment) {
       let url = SERVER + '/image/' + $stateParams.id + '/comment';
-      $http.post(url, comments).then(function (resp) {
-        let comment = resp.data;
-        $scope.showComments.unshift(comment);
+      console.log(comment)
+      $http.post(url, comment).then(function (resp) {
+        let addedComment = resp.data;
+        console.log(addedComment);
+        $scope.comments.unshift(addedComment);
       });
-      $scope.comments = [];
+      $scope.comment = {};
   }
 
   function getComment(){
        let url = SERVER + '/image/' + $stateParams.id + '/comment';
        $http.get(url, $scope.comment).then(function(response){
-         $scope.showComments = response.data;
+         $scope.comments = response.data;
        })
      }
 
