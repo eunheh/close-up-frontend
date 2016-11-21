@@ -3,7 +3,8 @@ import { SERVER } from "../server";
 function DetailController ($scope, $http, $stateParams, $document) {
 
  $scope.img = {};
- 	$scope.errors = {
+ $scope.comments = [];
+ $scope.errors = {
 		name:"Name is Requried",
 		emial:"Email must contain an @",
 		Web:"Website cannot be left empty"
@@ -34,9 +35,16 @@ $scope.addLike = (img) => {
     // $document.find('span').eq().addClass('count');
   };
 
-
+$scope.addComment = function (comment) {
+    let url = SERVER + '/image/' + $stateParams.id + '/comment';
+    $http.post(url, comment).then(function (resp) {
+      let comment = resp.data;
+      $scope.comments.push(comment);
+    });
+    $scope.comment = [];
+}
  init();
-  
+
 }
 
 DetailController.$inject = ['$scope', '$http', '$stateParams', '$document'];
