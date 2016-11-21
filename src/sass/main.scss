@@ -100,7 +100,7 @@ h1{
 }
 
 .border{
-    height: 250px;
+    height: 300px;
     border-radius: 22px;
     width: 560px;
     margin-left: 331px;
@@ -285,12 +285,41 @@ h1{
 	 width: 100%;
     margin-top: -65px;
 
+
   }
 
 .close{
     width: 100%;
+<<<<<<< HEAD
     margin-top:75px;
     -webkit-transition:margin-top  3s;
+=======
+    margin-top:95px;
+    -webkit-transition:margin-top  3s; 
+>>>>>>> 52b2ac5380153c9d372d12f7382bc6fc8befbc5f
     transition: margin-top 3s;
+}
+.input2{
+  width: 465px;
+  height: 40px;
+  border-radius: 15px;
+  border-color: black;
+  color:black;
+}
+.control{
+	color:red;
+	font-size:15px;
+	font-weight: bold;
+	font-family: 'Cutive Mono', monospace;
+}
 
+.control2{
+	color:red;
+	font-size:15px;
+	font-weight: bold;
+
+<<<<<<< HEAD
+=======
+	  font-family: 'Cutive Mono', monospace;
+>>>>>>> 52b2ac5380153c9d372d12f7382bc6fc8befbc5f
 }
