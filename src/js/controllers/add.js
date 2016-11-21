@@ -7,7 +7,7 @@ function AddController ($scope, $http, $state) {
       $state.go('home');
     });
   };
-
+  
 };
 
 AddController.$inject = ['$scope', '$http', '$state'];

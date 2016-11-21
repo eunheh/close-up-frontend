@@ -4,12 +4,6 @@ function DetailController ($scope, $http, $stateParams, $document) {
 
  $scope.img = {};
  $scope.comments = [];
- // $scope.errors = {
- // 	name:"Name is Requried",
- // 	emial:"Email must contain an @",
- // 	Web:"Website cannot be left empty"
- //
- // };
 
  function init () {
    let url = SERVER + '/post/' + $stateParams.id;
